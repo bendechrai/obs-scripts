@@ -1,0 +1,4 @@
+countdown.txt
+node_modules/
+*.sw?
+.env
