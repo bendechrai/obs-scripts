@@ -31,3 +31,7 @@ Simply call the script and pass the target timestamp:
 ```
 node index.js "2020-05-30 00:30"
 ```
+
+## Example
+
+[![Example for OBS Countdown Timer on YouTube](https://img.youtube.com/vi/azusNGU_vOw/0.jpg)](http://www.youtube.com/watch?v=azusNGU_vOw)
