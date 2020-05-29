@@ -73,6 +73,6 @@ const targetTimestamp = process.argv[2]
 if(targetTimestamp && targetTimestamp.match(/^20[0-9]{2}-[01][0-9]-[0-3][0-9] [0-2][0-9]:[0-5][0-9]$/)) {
     main(targetTimestamp)
 } else {
-    console.log('Usage: node.index.js "yyyy-mm-dd hh:mm"')
+    console.log('Usage: node index.js "yyyy-mm-dd hh:mm"')
 }
 
