@@ -57,9 +57,9 @@ const main = (targetTimestamp) => {
     obs.connect({ address: process.env.WS_ADDRESS, password: process.env.PASSWORD })
     .then(async () => {
 
-        obs.send('SetCurrentScene', { 'scene-name': '00 - Countdown' })
+        obs.send('SetCurrentScene', { 'scene-name': process.env.OBS_START_SCENE })
         await countdown(targetTimestamp)
-        obs.send('SetCurrentScene', { 'scene-name': '01 - Starting soon' })
+        obs.send('SetCurrentScene', { 'scene-name': process.env.OBS_END_SCENE })
         obs.disconnect()
 
     })
