@@ -1,17 +1,18 @@
 {
-  "name": "countdown",
+  "name": "obs-scripts",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A collection of scripst that I use for OBS Studio.",
   "dependencies": {
     "dotenv": "^8.2.0",
     "moment": "^2.26.0",
+    "node-fetch": "^2.6.0",
     "obs-websocket-js": "^4.0.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "countdown": "node countdown.js",
+    "switch": "node switch.js"
   },
-  "author": "",
+  "author": "Ben Dechrai <ben@dechrai.com> (https://bendechrai.com/)",
   "license": "ISC"
 }
