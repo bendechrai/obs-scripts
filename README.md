@@ -1,6 +1,6 @@
 # OBS Scripts
 
-A collection of scripst that I use for [OBS Studio](https://obsproject.com/) (Open Broadcaster Software). These perform various operations in OBS via an obs-websockets connection.
+A collection of scripts that I use for [OBS Studio](https://obsproject.com/) (Open Broadcaster Software). These perform various operations in OBS via an obs-websockets connection.
 
 ## Installation
 
