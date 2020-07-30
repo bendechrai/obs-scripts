@@ -41,6 +41,16 @@ Simply call the script and pass the target timestamp:
 npm run countdown "2020-05-30 13:00"
 ```
 
+### Showing the countdown timer in OBS
+
+In the scene that you want the timer to show, add a new source of type "Text". Leave the "Text" field blank, and tick the "Read from file" checkbox.
+
+In the "Text File" file selector, select `countdown.txt` from this project directory. Note, this file won't exists until the first time you start the countdown timer.
+
+During the countdown, the `countdown.txt` file will contain just the remaining time, in the format `h:mm:ss` or `m:ss`, prefied with the word "in". For example, with 2 minutes and 45 seconds remaining, it will read `in 2:45`. Once the countdown timer finishes, the file will contain `Soon!`. Edit the `countdown.js` file to your heart's content to modify this.
+
+Bearing this in mind, you might want to add a static string alongside the dynamic content, that works for both the countdown text and final message, like "Starting". This could be a separate OBS source element, or added right into the JavaScript file.
+
 ### Use case for a transition scene
 
 If you're using something like the [Move Transition plugin](https://obsproject.com/forum/resources/move-transition.913/), you might want to transition from a title screen to another scene that allows fancy animation of each element. This might require you to have lots of individual elements in these two scenes.
