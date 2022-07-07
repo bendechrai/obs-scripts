@@ -4,7 +4,7 @@
   "description": "A collection of scripst that I use for OBS Studio.",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "moment": "^2.26.0",
+    "moment": "^2.29.4",
     "node-fetch": "^2.6.0",
     "obs-websocket-js": "^4.0.1"
   },
